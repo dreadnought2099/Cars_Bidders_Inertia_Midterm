@@ -7,7 +7,7 @@ const message = ref("This is an Inertia App.")
 
 <template>
 
-<h1>Hello World!</h1>
+<h1>Hello World!!!</h1>
 <div>{{ message }}</div>
 
 </template>
