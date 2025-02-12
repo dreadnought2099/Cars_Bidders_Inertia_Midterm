@@ -5,7 +5,9 @@ import { Link } from '@inertiajs/vue3';
 <template>
     <div class="bg-primary shadow-md">
         <div class="container mx-auto flex justify-between items-center p-4">
-            <h1 class="text-2xl text-secondary font-bold">RMAGALLANEZ</h1>
+            <Link href="/" class="text-white font-semibold hover-underline">
+                <h1 class="text-2xl text-secondary font-bold">RMAGALLANEZ</h1>
+            </Link>
             <nav class="flex gap-7">
                 <Link href="/" class="text-white font-semibold hover-underline">
                     Home
