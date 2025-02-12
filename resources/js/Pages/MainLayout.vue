@@ -6,22 +6,18 @@ import { Link } from '@inertiajs/vue3';
     <div class="bg-primary shadow-md">
         <div class="container mx-auto flex justify-between items-center p-4">
             <h1 class="text-2xl text-secondary font-bold">RMAGALLANEZ</h1>
-            <nav class="flex gap-6">
-                <Link href="/" class="text-white font-semibold relative overflow-hidden group">
+            <nav class="flex gap-7">
+                <Link href="/" class="text-white font-semibold hover-underline">
                     Home
-                    <span class="absolute left-0 bottom-0 block w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </Link>
-                <Link href="/about" class="text-white font-semibold relative overflow-hidden group">
+                <Link href="/about" class="text-white font-semibold hover-underline">
                     About
-                    <span class="absolute left-0 bottom-0 block w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </Link>
-                <Link href="/contact" class="text-white font-semibold relative overflow-hidden group">
-                    Contact us
-                    <span class="absolute left-0 bottom-0 block w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
+                <Link href="/contact" class="text-white font-semibold hover-underline">
+                    Contact
                 </Link>
-                <Link href="/faq" class="text-white font-semibold relative overflow-hidden group">
+                <Link href="/faq" class="text-white font-semibold hover-underline">
                     FAQ
-                    <span class="absolute left-0 bottom-0 block w-0 h-[2px] bg-white transition-all duration-300 group-hover:w-full"></span>
                 </Link>
 
             </nav>

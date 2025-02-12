@@ -18,8 +18,55 @@ export default {
                 primary: '#A31621',
                 secondary: '#FCF7F8',
                 dark: '#212121',
+                hyperlink: '#155E95',
             },
         },
     },
-    plugins: [],
+    plugins: [
+        function ({ addComponents }) {
+            addComponents ({
+                '.hover-underline' : {
+                    position: 'relative',
+                    display: 'inline-block',
+                },
+
+                '.hover-underline::after' : {
+                    content: '""',
+                    position: 'absolute',
+                    left: '50%',
+                    bottom: 0,
+                    width: '0%',
+                    height: '2px',
+                    backgroundColor: '#fff',
+                    transition: 'all 0.5s ease',
+                },
+
+                '.hover-underline:hover::after': {
+                    width: '100%',
+                    left: '0%',
+                },
+
+                '.hover-underline-red' : {
+                    position: 'relative',
+                    display: 'inline-block',
+                },
+
+                '.hover-underline-red::after' : {
+                    content: '""',
+                    position: 'absolute',
+                    left: '0',
+                    bottom: 0,
+                    width: '0%',
+                    height: '2px',
+                    backgroundColor: '#A31621',
+                    transition: 'all 0.5s ease',
+                },
+
+                '.hover-underline-red:hover::after': {
+                    width: '100%',
+                    left: '0%',
+                },
+            });
+        },
+    ],
 };
