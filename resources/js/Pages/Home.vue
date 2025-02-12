@@ -4,6 +4,6 @@ import MainLayout from './MainLayout.vue';
 
 <template>
     <MainLayout>
-        <h1 class="text-2xl text-dark font-bold">Home Page</h1>
+        <h1 class="text-8xl text-dark font-bold text-center">Home</h1>
     </MainLayout>
 </template>

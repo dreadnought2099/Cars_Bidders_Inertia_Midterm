@@ -54,7 +54,7 @@ export default {
                 '.hover-underline-red::after' : {
                     content: '""',
                     position: 'absolute',
-                    left: '0',
+                    left: '50%',
                     bottom: 0,
                     width: '0%',
                     height: '2px',
