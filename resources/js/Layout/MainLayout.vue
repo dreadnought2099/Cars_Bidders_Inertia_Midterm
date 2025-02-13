@@ -6,7 +6,7 @@ import { Link } from "@inertiajs/vue3";
     <div class="bg-primary shadow-md">
         <div class="container mx-auto flex justify-between items-center p-4">
             <Link href="/">
-                <h1 class="text-2xl text-secondary font-bold hover-underline">
+                <h1 class="text-2xl text-white font-bold hover-underline">
                     RMAGALLANEZ
                 </h1>
             </Link>

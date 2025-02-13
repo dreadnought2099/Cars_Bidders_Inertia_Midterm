@@ -10,8 +10,7 @@ defineProps({
 </script>
 
 <template>
-    <div class="max-w-7xl mx-auto mb-4 p-6 bg-white shadow-lg rounded-lg">
-        <h1 class="text-center text-2xl font-bold text-dark mb-10">Products</h1>
+    <h1 class="text-center text-2xl font-bold text-dark mb-16">Famous Paintings
         <div class="flex flex-wrap gap-6 justify-center">
             <div
                 v-for="product in products"
@@ -21,7 +20,8 @@ defineProps({
                 <h5 class="text-xl font-semibold text-dark-600 mb-2">
                     {{ product.name }}
                 </h5>
-                <p class="text-base text-gray-700 mb-4 flex-grow">
+                <img :src="product.image" :alt="product.name" class="w-full h-screen object-cover">
+                <p class="text-base text-gray-700 mb-4 text-justify flex-grow">
                     {{ product.description }}
                 </p>
                 <div class="flex justify-between text-sm mt-auto">
@@ -34,5 +34,5 @@ defineProps({
                 </div>
             </div>
         </div>
-    </div>
+    </h1>
 </template>

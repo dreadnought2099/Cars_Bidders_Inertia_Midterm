@@ -16,7 +16,6 @@ export default {
             },
             colors: {
                 primary: '#A31621',
-                secondary: '#FCF7F8',
                 dark: '#212121',
                 hyperlink: '#155E95',
             },
