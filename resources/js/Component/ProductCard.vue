@@ -1,4 +1,4 @@
-<script>
+<script setup>
 import { defineProps } from "vue";
 
 defineProps({
@@ -11,16 +11,14 @@ defineProps({
 
 <template>
     <div class="max-w-7xl mx-auto mb-4 p-6 bg-white shadow-lg rounded-lg">
-        <h1 class="text-center text-3xl font-bold text-blue-600 mb-10">
-            Products
-        </h1>
+        <h1 class="text-center text-2xl font-bold text-dark mb-10">Products</h1>
         <div class="flex flex-wrap gap-6 justify-center">
             <div
                 v-for="product in products"
                 :key="product.id"
-                class="bg-white p-5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-xs flex flex-col"
+                class="bg-white p-5 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 w-full max-w-xs flex flex-col cursor-pointer"
             >
-                <h5 class="text-xl font-semibold text-blue-600 mb-2">
+                <h5 class="text-xl font-semibold text-dark-600 mb-2">
                     {{ product.name }}
                 </h5>
                 <p class="text-base text-gray-700 mb-4 flex-grow">

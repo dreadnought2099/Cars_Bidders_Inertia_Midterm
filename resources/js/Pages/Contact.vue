@@ -1,7 +1,7 @@
 <template>
     <MainLayout>
         <div class="space-y-4 text-center">
-            <h2 class="text-2xl font-bold">Connect with me</h2>
+            <h2 class="text-2xl text-dark font-bold">Connect with me</h2>
             <div class="flex flex-col items-center">
                 <a
                     href="https://instagram.com/skerm_art/"
