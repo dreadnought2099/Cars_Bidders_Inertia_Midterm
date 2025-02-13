@@ -1,7 +1,3 @@
-<script setup>
-import MainLayout from "../Layout/MainLayout.vue";
-</script>
-
 <template>
     <MainLayout>
         <div class="space-y-4 text-center">
@@ -29,3 +25,7 @@ import MainLayout from "../Layout/MainLayout.vue";
         </div>
     </MainLayout>
 </template>
+
+<script setup>
+import MainLayout from "../Layout/MainLayout.vue";
+</script>

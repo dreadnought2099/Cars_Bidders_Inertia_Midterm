@@ -1,8 +1,8 @@
 <template>
     <MainLayout>
-        <h1 class="text-2xl font-bold text-center">
-            Frequently Asked Questions
-        </h1>
+        <div>
+            <h1 class="text-2xl font-bold text-center">Products</h1>
+        </div>
     </MainLayout>
 </template>
 

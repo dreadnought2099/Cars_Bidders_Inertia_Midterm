@@ -14,6 +14,10 @@ Route::get('/contact', function () {
     return inertia('Contact');
 });
 
+Route::get('/product', function() {
+    return inertia('Product');
+});
+
 Route::get('/faq', function () {
     return inertia('FAQ');
 });
