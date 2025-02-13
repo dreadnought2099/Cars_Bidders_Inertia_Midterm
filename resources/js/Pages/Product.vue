@@ -14,7 +14,7 @@ const products = [
     {
         id: 2,
         name: "Starry Night",
-        description: "<span class='text-primary'>The Starry Night<span> is one of the most famous and recognizable paintings in the world, created by Vincent van Gogh in 1889. It is a masterpiece of Post-Impressionism, known for its swirling skies and emotional intensity.",
+        description: "The Starry Night is one of the most famous and recognizable paintings in the world, created by Vincent van Gogh in 1889. It is a masterpiece of Post-Impressionism, known for its swirling skies and emotional intensity.",
         whole_sale_price: 100,
         retail_price: 199,
         image: "image/StarryNight.jpg",
