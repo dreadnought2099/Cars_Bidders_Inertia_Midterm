@@ -8,19 +8,19 @@
                 <a
                     href="https://instagram.com/skerm_art/"
                     target="_blank"
-                    class="text-lg hover:text-primary hover-underline-red inline-block"
+                    class="text-2xl hover:text-primary hover-underline-red inline-block"
                     >Instagram</a
                 >
                 <a
                     href="https://www.youtube.com/@paradoxx_the_art"
                     target="_blank"
-                    class="text-lg hover:text-primary hover-underline-red inline-block"
+                    class="text-2xl hover:text-primary hover-underline-red inline-block"
                     >YouTube</a
                 >
                 <a
                     href="https://www.letterboxd.com/RMAGALLANEZ/"
                     target="_blank"
-                    class="text-lg hover:text-primary hover-underline-red inline-block"
+                    class="text-2xl hover:text-primary hover-underline-red inline-block"
                     >Letterboxd</a
                 >
             </div>

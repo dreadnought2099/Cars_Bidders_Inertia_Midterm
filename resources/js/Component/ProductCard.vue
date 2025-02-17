@@ -5,7 +5,7 @@
         >
             Famous <span class="text-primary">Paintings</span>
         </h1>
-        <div class="flex flex-wrap gap-6 justify-center">
+        <div class="flex flex-wrap gap-6 justify-center cursor-pointer">
             <div
                 v-for="product in products"
                 :key="product.id"
