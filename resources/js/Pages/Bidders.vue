@@ -1,7 +1,6 @@
-<!-- resources/js/Pages/Bidders.vue -->
 <template>
     <MainLayout>
-        <h1 class="text-6xl text-dark font-bold text-center py-16">
+        <h1 class="text-4xl text-dark font-bold text-center py-10">
             Bidders<span class="text-primary">.</span>
         </h1>
 

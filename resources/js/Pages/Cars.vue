@@ -1,7 +1,6 @@
-<!-- resources/js/Pages/Cars.vue -->
 <template>
     <MainLayout>
-        <h1 class="text-6xl text-dark font-bold text-center py-16">
+        <h1 class="text-4xl text-dark font-bold text-center py-10">
             Cars<span class="text-primary">.</span>
         </h1>
 
@@ -19,9 +18,8 @@
                 class="card p-4 shadow-lg"
             >
                 <h3 class="text-xl font-bold">
-                    {{ car.make }} {{ car.model }}
+                    {{ car.make }} {{ car.model }} ({{ car.year }})
                 </h3>
-                <p>{{ car.year }}</p>
                 <p>{{ car.miles }} miles</p>
             </div>
         </div>
@@ -33,6 +31,7 @@
 </template>
 
 <script setup>
+import { ref, computed } from "vue";
 import MainLayout from "../Layout/MainLayout.vue";
 
 const props = defineProps({
@@ -45,7 +44,9 @@ const filteredCars = computed(() => {
     return props.cars.filter((car) => {
         return (
             car.make.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
-            car.model.toLowerCase().includes(searchQuery.value.toLowerCase())
+            car.model.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
+            car.year.toString().includes(searchQuery.value) ||
+            car.miles.toString().includes(searchQuery.value)
         );
     });
 });
