@@ -1,48 +1,43 @@
-<script setup>
-import { Link } from "@inertiajs/vue3";
-</script>
-
 <template>
-    <div class="bg-primary shadow-md">
-        <div class="container mx-auto flex justify-between items-center p-4">
-            <Link href="/">
-                <h1 class="text-2xl text-white font-bold hover-underline">
-                    RMAGALLANEZ
-                </h1>
-            </Link>
-            <nav class="flex gap-7">
-                <Link href="/" class="text-white font-semibold hover-underline">
-                    Home
-                </Link>
+    <div>
+        <!-- Navigation Bar -->
+        <div class="bg-primary shadow-md">
+            <div
+                class="container mx-auto flex justify-between items-center p-4"
+            >
                 <Link
-                    href="/about"
-                    class="text-white font-semibold hover-underline"
+                    href="/"
+                    class="text-2xl text-white font-bold hover-underline"
+                    >Midterm</Link
                 >
-                    About
-                </Link>
-                <Link
-                    href="/contact"
-                    class="text-white font-semibold hover-underline"
-                >
-                    Contact
-                </Link>
-                <Link
-                    href="/product"
-                    class="text-white font-semibold hover-underline"
-                >
-                    Products
-                </Link>
-                <Link
-                    href="/faq"
-                    class="text-white font-semibold hover-underline"
-                >
-                    FAQ
-                </Link>
-            </nav>
+                <nav class="flex gap-7">
+                    <Link
+                        href="/"
+                        class="text-white font-semibold hover-underline"
+                        >Home</Link
+                    >
+                    <Link
+                        href="/bidders"
+                        class="text-white font-semibold hover-underline"
+                        >Bidders</Link
+                    >
+                    <Link
+                        href="/cars"
+                        class="text-white font-semibold hover-underline"
+                        >Cars</Link
+                    >
+                </nav>
+            </div>
         </div>
+
+        <!-- Slot for Page Content -->
+        <slot />
     </div>
-    <slot />
 </template>
+
+<script setup>
+import { Link } from "@inertiajs/vue3"; // Import Link from Inertia
+</script>
 
 <style scoped>
 nav {
