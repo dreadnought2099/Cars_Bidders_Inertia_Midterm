@@ -1,21 +1,23 @@
 <template>
     <MainLayout>
-        <h1 class="text-4xl text-dark font-bold text-center py-10">
-            Cars<span class="text-primary">.</span>
-        </h1>
+        <div class="flex justify-between items-center py-10 mx-4">
+            <h1 class="text-4xl text-dark font-bold">
+                Cars<span class="text-primary">.</span>
+            </h1>
 
-        <input
-            v-model="searchQuery"
-            type="text"
-            placeholder="Search Cars..."
-            class="mb-4 p-2 border rounded"
-        />
+            <input
+                v-model="searchQuery"
+                type="text"
+                placeholder="Search cars"
+                class="p-2 border-2 focus:border-primary focus:ring-primary outline-none rounded w-64"
+            />
+        </div>
 
-        <div v-if="filteredCars.length > 0" class="grid grid-cols-3 gap-4">
+        <div v-if="filteredCars.length > 0" class="mx-4 grid grid-cols-3 gap-4">
             <div
                 v-for="car in filteredCars"
                 :key="car.id"
-                class="card p-4 shadow-lg"
+                class="card p-4 shadow-lg hover:text-primary rounded-lg hover:shadow-xl transition-all duration-300 w-full sm:max-w-sm md:max-w-md lg:max-w-xs xl:max-w-sm transform hover:scale-105 group cursor-pointer"
             >
                 <h3 class="text-xl font-bold">
                     {{ car.make }} {{ car.model }} ({{ car.year }})
