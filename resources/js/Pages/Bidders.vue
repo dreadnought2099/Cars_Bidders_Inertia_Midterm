@@ -15,7 +15,7 @@
             <div
                 v-for="bidder in filteredBidders"
                 :key="bidder.id"
-                class="card p-4 shadow-lg"
+                class="card p-4 shadow-lg hover:text-primary rounded-lg hover:shadow-xl transition-all duration-300 w-full sm:max-w-sm md:max-w-md lg:max-w-xs xl:max-w-sm transform hover:scale-105 group"
             >
                 <h3 class="text-xl font-bold">
                     {{ bidder.first_name }} {{ bidder.last_name }}
