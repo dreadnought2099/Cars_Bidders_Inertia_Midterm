@@ -1,7 +1,7 @@
 <template>
     <div>
         <!-- Navigation Bar -->
-        <div class="bg-primary shadow-md">
+        <div class="bg-purple-500 shadow-md">
             <div
                 class="container mx-auto flex justify-between items-center p-5"
             >

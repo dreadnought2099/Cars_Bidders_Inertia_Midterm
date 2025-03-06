@@ -3,14 +3,14 @@
         <!-- Header Section -->
         <div class="flex justify-between items-center py-10 mx-4">
             <h1 class="text-4xl text-dark font-bold">
-                Cars<span class="text-primary">.</span>
+                Cars<span class="text-purple-500">.</span>
             </h1>
 
             <input
                 v-model="searchQuery"
                 type="text"
                 placeholder="Search cars"
-                class="p-2 border-2 rounded-xl border-gray-600 focus:border-primary focus:ring-primary outline-none w-64"
+                class="p-2 border-2 rounded-xl border-purple-300 focus:border-purple-500 focus:ring-purple-500 outline-none w-64"
             />
         </div>
 
@@ -26,26 +26,26 @@
             >
                 <!-- Background Layer -->
                 <span
-                    class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-gray-600 group-hover:bg-primary rounded-lg"
+                    class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500  rounded-lg"
                 ></span>
 
                 <!-- Foreground Car Card -->
                 <div
-                    class="relative h-full p-5 bg-white border-2 border-gray-600 group-hover:border-primary rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                    class="relative h-full p-5 bg-white border-2 border-purple-500  rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer group"
                 >
                     <div class="flex items-center -mt-1">
                         <h3
-                            class="my-2 ml-3 text-lg font-bold text-gray-800 group-hover:text-primary"
+                            class="my-2 ml-3 text-lg font-bold text-gray-700 group-hover:text-purple-500"
                         >
                             {{ car.make }} {{ car.model }} ({{ car.year }})
                         </h3>
                     </div>
                     <p
-                        class="mt-3 mb-1 text-xs font-medium text-gray-600 group-hover:text-primary uppercase"
+                        class="mt-3 mb-1 text-xs font-medium text-gray-500 group-hover:text-purple-400 uppercase"
                     >
                         ____________
                     </p>
-                    <p class="mb-2 text-gray-600 group-hover:text-primary">
+                    <p class="mb-2 text-gray-600 group-hover:text-purple-400">
                         {{ car.miles }} miles
                     </p>
                 </div>

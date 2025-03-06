@@ -47,5 +47,12 @@ class BidderSeeder extends Seeder
             'address' => 'Cabulijan, Tubigon, Bohol',
             'email' => 'maglawaybenito@mail.com'
         ]);
+
+        Bidder::create([
+            'first_name' => 'Benjamin',
+            'last_name' => 'Poindexter',
+            'address' => 'New York, New York',
+            'email' => 'bullseye@mail.com'
+        ]);
     }
 }
