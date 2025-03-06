@@ -9,7 +9,7 @@
             v-model="searchQuery"
             type="text"
             placeholder="Search bidders"
-            class="p-2 border-2 rounded focus:border-primary focus:ring-primary outline-none w-64"
+            class="p-2 border-2 rounded-xl border-gray-600 focus:border-primary focus:ring-primary outline-none w-64"
         />
         </div>
         <div v-if="filteredBidders.length > 0" class="mx-4 grid grid-cols-3 gap-4">
@@ -25,9 +25,10 @@
                 <p>{{ bidder.address }}</p>
             </div>
         </div>
+        
 
         <div v-else class="text-center">
-            <p>No bidders available.</p>
+            <p>No bidders available at the moment.</p>
         </div>
     </MainLayout>
 </template>

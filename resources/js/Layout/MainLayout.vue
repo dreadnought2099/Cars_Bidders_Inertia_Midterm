@@ -3,7 +3,7 @@
         <!-- Navigation Bar -->
         <div class="bg-primary shadow-md">
             <div
-                class="container mx-auto flex justify-between items-center p-4"
+                class="container mx-auto flex justify-between items-center p-5"
             >
                 <Link
                     href="/"
@@ -13,17 +13,17 @@
                 <nav class="flex gap-7">
                     <Link
                         href="/"
-                        class="text-white font-semibold hover-underline"
+                        class="text-white text-xl font-semibold hover-underline"
                         >Home</Link
                     >
                     <Link
                         href="/bidders"
-                        class="text-white font-semibold hover-underline"
+                        class="text-white text-xl font-semibold hover-underline"
                         >Bidders</Link
                     >
                     <Link
                         href="/cars"
-                        class="text-white font-semibold hover-underline"
+                        class="text-white text-xl font-semibold hover-underline"
                         >Cars</Link
                     >
                 </nav>

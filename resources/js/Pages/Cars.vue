@@ -1,5 +1,6 @@
 <template>
     <MainLayout>
+        <!-- Header Section -->
         <div class="flex justify-between items-center py-10 mx-4">
             <h1 class="text-4xl text-dark font-bold">
                 Cars<span class="text-primary">.</span>
@@ -9,23 +10,49 @@
                 v-model="searchQuery"
                 type="text"
                 placeholder="Search cars"
-                class="p-2 border-2 focus:border-primary focus:ring-primary outline-none rounded w-64"
+                class="p-2 border-2 rounded-xl border-gray-600 focus:border-primary focus:ring-primary outline-none w-64"
             />
         </div>
 
-        <div v-if="filteredCars.length > 0" class="mx-4 grid grid-cols-3 gap-4">
+        <!-- Cars List Section -->
+        <div
+            v-if="filteredCars.length > 0"
+            class="mx-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
             <div
                 v-for="car in filteredCars"
                 :key="car.id"
-                class="card p-4 shadow-lg hover:text-primary rounded-lg hover:shadow-xl transition-all duration-300 w-full sm:max-w-sm md:max-w-md lg:max-w-xs xl:max-w-sm transform hover:scale-105 group cursor-pointer"
+                class="relative h-full group"
             >
-                <h3 class="text-xl font-bold">
-                    {{ car.make }} {{ car.model }} ({{ car.year }})
-                </h3>
-                <p>{{ car.miles }} miles</p>
+                <!-- Background Layer -->
+                <span
+                    class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-gray-600 group-hover:bg-primary rounded-lg"
+                ></span>
+
+                <!-- Foreground Car Card -->
+                <div
+                    class="relative h-full p-5 bg-white border-2 border-gray-600 group-hover:border-primary rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                >
+                    <div class="flex items-center -mt-1">
+                        <h3
+                            class="my-2 ml-3 text-lg font-bold text-gray-800 group-hover:text-primary"
+                        >
+                            {{ car.make }} {{ car.model }} ({{ car.year }})
+                        </h3>
+                    </div>
+                    <p
+                        class="mt-3 mb-1 text-xs font-medium text-gray-600 group-hover:text-primary uppercase"
+                    >
+                        ____________
+                    </p>
+                    <p class="mb-2 text-gray-600 group-hover:text-primary">
+                        {{ car.miles }} miles
+                    </p>
+                </div>
             </div>
         </div>
 
+        <!-- No Cars Available Message -->
         <div v-else class="text-center">
             <p>No cars available.</p>
         </div>
